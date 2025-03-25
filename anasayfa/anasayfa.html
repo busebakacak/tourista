@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISTA - Explore the World</title>
+    <link rel="stylesheet" href="anasayfa.css">
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+            <a href="anasayfa.html">TOURISTA</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="hakkinda.html">About Us</a></li>
+                <li><a href="iletisim.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="anasayfa.html">Home</a></li>
+            <li><a href="test.html">Test</a></li>
+            <li><a href="test.html">Test</a></li>
+            <li><a href="test.html">Test</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="hero">
+            <h2>Welcome to TOURISTA</h2>
+            <p>Your ultimate destination for exploring the world. Find the best travel deals and unforgettable experiences.</p>
+        </div>
+
+        <section class="destinations">
+            <div class="destination">
+                <img src="https://i.insider.com/5bffbfd8bde70f5f6d17f115?width=1000&format=jpeg&auto=webp" alt="Beach" class="resim">
+                <h3>Tropical Beaches</h3>
+                <p>Relax on the world's most beautiful beaches.</p>
+            </div>
+            <div class="destination">
+                <img src="https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?t=st=1737401498~exp=1737405098~hmac=6ddf6aab5e67a88df5d3996e2f579af535fde00dc5d833f08634b841a5288e1b&w=1380" alt="Mountain" class="resim">
+                <h3>Mountain Adventures</h3>
+                <p>Explore breathtaking mountain landscapes.</p>
+            </div>
+            <div class="destination">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D" alt="City" class="resim">
+                <h3>City Getaways</h3>
+                <p>Discover the charm of vibrant cities.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
